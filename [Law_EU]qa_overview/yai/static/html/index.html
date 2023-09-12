@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<!-- Add Bootstrap and Bootstrap-Vue CSS to the <head> section -->
+		<link type="text/css" rel="stylesheet" href="/resources/static/lib/bootstrap-4.5.2.min.css"/>
+		<link type="text/css" rel="stylesheet" href="/resources/static/lib/bootstrap-vue-2.16.0.min.css"/>
+		<!--FontAwesome import-->
+		<link type="text/css" rel="stylesheet" href="/resources/static/lib/font-awesome-4.7.0.min.css">
+
+		<!-- App -->
+		<link type="text/css" rel="stylesheet" href="/resources/static/style.css">
+		<link type="text/css" rel="stylesheet" href="/resources/static/tree.css">
+	</head>
+	<body>
+		<div id="app" class="container">
+
+			<overview_area :overview_api="overview_api">
+				
+
+				<h1>DiscoLQA</h1>
+				<div>
+					<p>
+						Here you can ask any English question concerning the content of the following documents:
+					</p>
+					<ul>
+						<li v-for="doc in documents" v-html="doc"></li>
+					</ul>
+				</div>
+	            <hr flex/>
+	            <answer 
+	            	:input_placeholder="question_input_placeholder" 
+	            	:default_value="question_input_default_value"
+	            	:answer_api="answer_api"
+	            ></answer>
+	            <hr flex/>
+	            
+			</overview_area>
+		</div>
+		<footer>
+			<!-- JQUERY -->
+			<script type="text/javascript" src="/resources/static/lib/jquery-3.5.1.min.js"></script>
+			<!-- Add Vue and Bootstrap-Vue JS just before the closing </body> tag -->
+			<script type="text/javascript" src="/resources/static/lib/vue-2.6.11.min.js"></script>
+			<script type="text/javascript" src="/resources/static/lib/bootstrap-vue-2.16.0.min.js"></script>
+			<script type="text/javascript" src="/resources/static/lib/vue-cookies.js"></script>
+			
+			<!-- Internal libs, keep this exact order of import -->
+			<script type="text/javascript" src="/resources/static/lib/common_fn.js"></script>
+			<!-- Shared popup stuff, keep this exact order of import -->
+			<script type="text/javascript" src="/resources/static/template/template_lib.js"></script>
+			<script type="text/javascript" src="/resources/static/template/template.js"></script>
+			<script type="text/javascript" src="/resources/static/template/jsonld_handler.js"></script>
+			<!-- Content Script, keep this exact order of import -->
+			<script type="text/javascript" src="/resources/static/stage_builder/item_stage_builder.js"></script>
+			<script type="text/javascript" src="/resources/static/stage_builder/domain_stage_builder.js"></script>
+			<script type="text/javascript" src="/resources/static/stage_builder/api_lib.js"></script>
+			<!-- App, keep this exact order of import -->
+			<script type="text/javascript" src="/resources/static/vue_component/explanation_components.js"></script>
+			<script type="text/javascript" src="/resources/static/app.js"></script>
+		</footer>
+	</body>
+</html>

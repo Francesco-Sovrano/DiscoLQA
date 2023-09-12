@@ -1,0 +1,52 @@
+body {
+	font-size: 18px;
+    overflow-wrap: break-word;
+}
+
+/*#initial_explanans .link:after {
+    font-family: FontAwesome;
+    content: "\f05a";
+    display:inline-block;
+    position: relative;
+    top:-5px;
+    font-size: 75%;
+}*/
+
+.template_tree .link:after {
+    content: "" !important;
+    top: 0px !important;
+    font-size: 0% !important;
+}
+
+.detail_btn {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pdf-pages-container {
+  position: relative;
+  width: fit-content;
+}
+.pdf-page-container {
+  position: relative;
+  width: fit-content;
+}
+.pdf-text-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*opacity: 0.2;*/
+  color: transparent;
+  line-height: 1;
+}
+.pdf-text-layer > span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}

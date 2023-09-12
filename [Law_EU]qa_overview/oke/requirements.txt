@@ -1,0 +1,4 @@
+bottle
+more_itertools
+knowpy
+protobuf==3.20.1
