@@ -91,7 +91,7 @@ OQA_OPTIONS = {
 }
 
 QA_EXTRACTOR_OPTIONS = {
-	'models_dir': '/home/toor/Desktop/quansx_trainer/data/models', 
+	'models_dir': 'question_extractor/data/models', 
 
 	# 'sbert_model': {
 	# 	'url': 'facebook-dpr-question_encoder-multiset-base', # model for paraphrase identification

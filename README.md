@@ -30,6 +30,8 @@ git clone https://github.com/Francesco-Sovrano/DiscoLQA.git
 cd DiscoLQA
 ```
 
+Download [pytorch_model.bin](https://zenodo.org/records/10555604/files/pytorch_model.bin?download=1) from [https://doi.org/10.5281/zenodo.10555603](https://doi.org/10.5281/zenodo.10555603) and move it inside [[Law_EU]qa_overview/oke/question_extractor/data/models/distilt5-disco-qaamr-multi]([Law_EU]qa_overview/oke/question_extractor/data/models/distilt5-disco-qaamr-multi).
+
 Then, you have to run the [setup.sh]([Law_EU]qa_overview/setup.sh) script to install all the dependencies in a python virtual environment.
 
 To replicate the DiscoLQA experiment, run the [run_discolqa_experiments.sh]([Law_EU]qa_overview/run_discolqa_experiments.sh) script.
